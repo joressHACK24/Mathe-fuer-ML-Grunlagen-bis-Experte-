@@ -76,7 +76,7 @@ print(X_neu)
 for i in range(epochs):
     y_pred = X_neu @ w + b
 
-    w -= learning_rate * (1/m) * (mplement multivariate gradient descent with Z-score(X_neu.T) @(y_pred - y))
+    w -= learning_rate * (1/m) * ((X_neu.T) @(y_pred - y))
     b -= learning_rate * (1/m) * np.sum((y_pred - y))
 
 
